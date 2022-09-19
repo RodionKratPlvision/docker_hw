@@ -2,7 +2,7 @@
 
 
 ### Setup
-TO setup enviroment use commands from ` docker_hw ` file
+To setup enviroment use commands from ` docker_hw ` file
 
 In docker container al_hw1 create file `start_send.sh ` and paste code from this repo
 
