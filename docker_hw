@@ -1,0 +1,24 @@
+sudo docker container run --publish 805:80 --name alpine_1_hw --detach alpine
+
+sudo docker container run --publish 806:80 --name alpine_2_hw --detach alpine
+
+sudo docker network create my_network_hw
+
+sudo docker image build -t my_alpine ./
+
+sudo docker container run -it --publish 810:80 --name al_hw1 my_alpine /bin/bash
+sudo docker container run -it --publish 811:80 --name al_hw2 my_alpine /bin/bash
+
+in docker container al_hw1
+vi start_send.sh
+chmod 777 start_send.sh 
+
+
+in docker container al_hw2
+vi receive_file.sh
+chmod 777 receive_file.sh 
+
+
+
+
+
